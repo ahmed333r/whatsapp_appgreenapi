@@ -1,0 +1,13 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 992px) {
+  .App {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+    min-width: 800px;
+  }
+}

@@ -1,0 +1,8 @@
+.card {
+  width: 300px;
+}
+@media (max-width: 992px) {
+  .card {
+    display: block;
+  }
+}

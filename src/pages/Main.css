@@ -1,0 +1,108 @@
+.all {
+  width: 100%;
+  background: linear-gradient(rgb(5, 168, 132) 30vh, rgb(17, 27, 33) 30vh);
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.all .centerbox {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 100vh;
+  margin-top: calc(30vh / 2);
+  padding: 50px;
+  display: grid;
+  grid-template-areas: "header code" "list code" "tutorial tutorial";
+  grid-template-columns: 60% auto;
+  grid-template-rows: 100px 200px;
+}
+.all .centerbox .header {
+  grid-area: header;
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+.all .centerbox .list {
+  grid-area: list;
+  background-color: rgb(255, 255, 255);
+}
+.all .centerbox .list li {
+  padding: 10px;
+}
+.all .centerbox .code {
+  grid-area: code;
+  background-color: rgb(255, 255, 255);
+
+  padding: 15px;
+}
+.all .centerbox .code form {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+.all .centerbox .code label {
+  margin: 10px 7px;
+}
+.all .centerbox .code input {
+  border-radius: 7px;
+  outline: none;
+}
+.all .centerbox .code input:focus {
+  border: 4px solid #6567bd;
+}
+
+.all .centerbox .tutorial {
+  grid-area: tutorial;
+  background-color: #eee;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 992px) {
+  .all .centerbox {
+    grid-template-areas: "header code" "list code" "tutorial tutorial";
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50px 100px;
+  }
+  .all .centerbox {
+    padding: 4px;
+  }
+  .all .centerbox .header {
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .all .centerbox .list {
+    font-size: 9px;
+    padding-left: 10px;
+    margin-left: 7px;
+    padding: 4px;
+    margin-top: 0px;
+  }
+  .all .centerbox .list li {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .all .centerbox .code {
+    font-size: 9px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .all .centerbox .code form label {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .all .centerbox .code form .btn {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+  }
+  .all .centerbox .tutorial {
+  width: 90%;
+  margin: 5% 5%;
+  height: 60vh
+}
+}
+

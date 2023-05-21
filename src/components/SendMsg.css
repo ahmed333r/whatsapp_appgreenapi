@@ -1,0 +1,29 @@
+.note {
+  color: rgb(37, 8, 8);
+  font-size: 13px;
+  font-weight: 100;
+}
+.bt {
+    margin-top: 500px;
+    width: 150px
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 992px) {
+.form {
+ /* font-size: 40px; */
+ /* margin-left: 5px; */
+ /* width: 900px; */
+ /* height: 90px */
+ /* display/: block; */
+ /* flex-wrap: wrap;  */
+}
+.bt {
+  margin-top: 10px;
+  margin: 5px;
+}
+
+}
